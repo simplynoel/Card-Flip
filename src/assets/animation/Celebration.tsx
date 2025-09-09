@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+
 import Lottie from "lottie-react";
 import animationData from "./Celebration.json"; // your animation file
 
