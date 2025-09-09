@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react'
 import './App.scss'
 //Card type and utility functions
 import { type Card, initializeCards, gridSizes } from './utils/Card'
-//Scoring
-import { type Score, type Difficulty, type Hiscore } from './utils/Scoring'
 //Sound and Visual Effects
 import useSound from 'use-sound';
 import flipSound from './assets/cardflip.mp3';
@@ -34,7 +32,6 @@ function App() {
    const [matchFound] = useSound(matched, { volume: isFlipMuted ? 0 : 1 });
   const [playWinSound] = useSound(winSound, { volume: isGameWon ? 1 : 0 })
   //scoring 
-  const [newHighScore, setNewHighScore] = useState<Score | null>(null);
   const [bestScores, setBestScores] = useState({
     easy: { time: null, moves: null },
     medium: { time: null, moves: null },
