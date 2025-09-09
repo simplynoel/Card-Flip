@@ -245,7 +245,7 @@ return (
             </button>
             <button className="icon-btn" title="Mute/Unmute Card Flip" onClick={() => setIsFlipMuted(!isFlipMuted)}>
               <span role="img" aria-label="flip" className='btn-icon'>{isFlipMuted ? "🔕" : "🔔"}</span>
-            </button>
+            </button> 
             <button
               className="icon-btn"
               title="Settings"
